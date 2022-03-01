@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 100px;
+    padding-top: 100px;
+    background-color: bisque;
+}
+
+pre {
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    color: slateblue;
+}
