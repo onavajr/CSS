@@ -1,15 +1,137 @@
+/*
 * {
     margin: 0;
 }
 
 body {
     margin: 100px;
-    padding-top: 100px;
-    background-color: bisque;
+    background-image: url('https://i.insider.com/5ba14088e199f35a2e8b52bb?width=1000&format=jpeg&auto=webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 pre {
     font-size:large;
     font-family: 'Times New Roman', Times, serif;
     color: slateblue;
+}
+
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    color:green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color:yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+
+
+a:link, a:visited {
+    background-color:#f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0px 0px;
+    border: 1px solid black;
+    border-spacing: 10px;
+    
+}
+
+td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 10%;
+    text-align: center;
+    
+}
+
+tr {
+    height:50px;
+    border-bottom:20px solid black;
+}
+
+tr:hover {
+    background-color: red;
+}
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+
+  li {
+      float: left;
+  }
+  li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration:  none;
+  }
+
+  li a:hover {
+      background-color: #111111;
+  }
+
+  */
+
+  .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+  }
+
+  .main {
+      color: red;
+      text-align: center;
+  }
+
+  iframe {
+      height: 800px;
+      width: 100%;
+  }
+
+#date {
+    text-align: center;
 }
