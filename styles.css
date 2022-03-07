@@ -112,7 +112,7 @@ tr:nth-child(even) {
       background-color: #111111;
   }
 
-  */
+ 
 
   .city {
       background-color: tomato;
@@ -134,4 +134,10 @@ tr:nth-child(even) {
 
 #date {
     text-align: center;
+}
+
+ */
+
+p {
+    color: blue;
 }
