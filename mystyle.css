@@ -28,3 +28,37 @@ h1, p {
     border-color: white;
     color: white;
 }
+
+.dashed {
+    border: 5px dashed white;
+    color: white;
+}
+
+.solid {
+    border: 5px solid white;
+    color:white;
+}
+
+.double {
+    border: 10px double white;
+    color:white;
+}
+
+.groove {
+    border: 10px groove white;
+    color:white;
+}
+
+.ridge {
+    border: 10px ridge white;
+    color:white;
+}
+
+.inset {
+    border: 5px inset white;
+    color:white;
+}
+
+
+
+
