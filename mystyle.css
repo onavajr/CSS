@@ -22,3 +22,9 @@ h1, p {
     margin: auto;
     opacity: .5;
 }
+
+.dotted {
+    border-style: dotted;
+    border-color: white;
+    color: white;
+}
