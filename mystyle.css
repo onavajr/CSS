@@ -1,3 +1,12 @@
+* {
+    outline: 1px solid green;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: none;
+}
+
+/*
+
 body {
     background-color: black
 }
@@ -57,12 +66,46 @@ h1, p {
 .inset {
     border: 5px inset white;
 }
+*/
+body {
+    margin: auto;
+}
 
+.ptag {
+    margin: auto;
+    border-style: 5px solid black;
+    border-bottom: 1px solid blue;
+    border-width: thick;
+}
+
+.box2 {
+    margin: 30px 20px 30px;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    text-align: center;
+    border-width: 5px;
+    padding: 100px;
+}
 .box1 {
     width: 300px;
     background-color: white;
     height: 300px;
+    color: black;
+    text-align: center;
+    margin: 20px;
+    border: 5px solid black;
 }
 
+.boxmodel {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 20px solid black;
+}
 
-
+p {
+    border: 5px solid yellow;
+    padding: 10px;
+}
