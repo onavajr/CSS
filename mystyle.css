@@ -105,7 +105,32 @@ body {
     border: 20px solid black;
 }
 
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+    text-align: right;
+}
+
+h3 {
+    text-align: center;
+}
+
 p {
     border: 5px solid yellow;
     padding: 10px;
+}
+
+
+.offset {
+    margin: 30px;
+    border: 20px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
+
+.justify {
+    text-align: justify;
 }
