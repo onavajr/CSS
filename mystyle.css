@@ -162,3 +162,7 @@ p.font-three {
 p.font-four {
     font-family: 'Sofia';
 }
+
+.fa-solid {
+    padding: 100px;
+}
