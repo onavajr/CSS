@@ -1,9 +1,8 @@
 * {
     outline: 1px solid green;
     box-sizing: border-box;
-    margin: 0;
+    margin: 10px;
     max-width: none;
-    font-size: 2vw;
 }
 
 /*
@@ -163,6 +162,30 @@ p.font-four {
     font-family: 'Sofia';
 }
 
-.fa-solid {
+
+.glyphicon, .fa-car, .fa-solid {
+    font-size: 10em;
+}
+
+.material-icons {
+    font-size: 10em;
+}
+
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    border: 2px solid green;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     padding: 100px;
+    
+}
+
+a:hover, a:active {
+    background-color:skyblue;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 100%;
 }
