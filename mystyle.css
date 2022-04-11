@@ -1,7 +1,7 @@
 * {
-    outline: 1px solid green;
+    
     box-sizing: border-box;
-    margin: 10px;
+    margin: 0px;
     max-width: none;
 }
 
@@ -119,11 +119,6 @@ h3 {
     text-align: center;
 }
 
-p {
-    border: 5px solid yellow;
-    padding: 10px;
-}
-
 
 .offset {
     margin: 30px;
@@ -189,3 +184,39 @@ a:hover, a:active {
     text-decoration: none;
     border-radius: 100%;
 }
+
+/*
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+    padding: 20px;
+    background-color: pink;
+}
+
+ol.d {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+    background: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+  }
+
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+*/
+
