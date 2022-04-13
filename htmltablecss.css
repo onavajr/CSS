@@ -1,14 +1,14 @@
 * {
-    margin: 0;;
+    margin: 0; /* use this to center the div */
     border-collapse: collapse;
     box-sizing: border-box;
+    min-width: 0px;
 }
 
 table {
-    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-   width: 100%;
+    width: 100%; /* use this to center the div */
 }
 
 td, th {
@@ -23,6 +23,7 @@ tr:nth-child(even) {
 
 th {
     background-color: yellowgreen;
+    height: 80px;
 }
 
 tr:hover {
@@ -35,5 +36,5 @@ table, th, td {
 }
 
 div {
-    margin: 20px;
+    margin: 20px; /* use this to center the div */
 }
