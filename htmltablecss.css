@@ -38,3 +38,9 @@ table, th, td {
 div {
     margin: 20px; /* use this to center the div */
 }
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
