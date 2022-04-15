@@ -42,5 +42,16 @@ div {
 li {
     list-style-type: none;
     display: inline-block;
-    padding: 0px 20px;
+    padding-right: 50px;
+}
+
+.links {
+    position:-webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    background-color: turquoise;
+    margin-top: 10px;
+    padding-left: 0;
+    padding: 10px 10px;
 }
