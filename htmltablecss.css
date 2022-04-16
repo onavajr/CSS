@@ -3,6 +3,7 @@
     border-collapse: collapse;
     box-sizing: border-box;
     min-width: 0px;
+    outline: 1px solid red;
 }
 
 table {
@@ -46,12 +47,76 @@ li {
 }
 
 .links {
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: turquoise;
+    padding: 10px 10px;
+    float: left;
+    width: 50%;
+    border-bottom: 10px solid green;
+}
+ul.menu {
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     right: 0;
     background-color: turquoise;
-    margin-top: 10px;
-    padding-left: 0;
     padding: 10px 10px;
+    width: 50%;
+    border-bottom: 10px solid green;
+
+}
+
+
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+p.width {
+    width: 600px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+p.maxwidth {
+    max-width: 5000px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+
+.box{
+    display: flex;
+}
+.box1 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+.box2 {
+    width: 300px;
+    height: 300px;
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+    right: 150px;
+}
+.box4 {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.test {
+    margin: auto;
+    display: flex;
 }
