@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategrey;
+    color: white;
+}
+
+div {
+    border: 2px solid yellow;
+    margin: 50px;
+}
+
+.img1 {
+    width: 100px;
+    float: right;
+}
+
+.img2 {
+    margin: 20px;
+    width: 100px;
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

@@ -29,3 +29,6 @@ list-style-type: none;
 Use max-width instead of width for smaller devices.
 
 Use border-collapse: collapse to remove small space inbetween the table or rows and column.
+
+
+clearfix hack = use overflow: auto to contain image and text iside element.
