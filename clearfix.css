@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-color: darkslategrey;
     color: white;
 }
@@ -28,4 +28,69 @@ div {
     content: "";
     clear: both;
     display: table;
+}
+
+*/
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    width: 33.33%;
+    float: left;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: dodgerblue;
+}
+
+.flexcontainer .flexbox{
+    border-collapse: ;
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+a {
+    border: 10px solid yellow;
 }
