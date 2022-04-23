@@ -32,3 +32,5 @@ Use border-collapse: collapse to remove small space inbetween the table or rows 
 
 
 clearfix hack = use overflow: auto to contain image and text iside element.
+
+horizontal navigation link = use inline-block
