@@ -33,4 +33,12 @@ Use border-collapse: collapse to remove small space inbetween the table or rows 
 
 clearfix hack = use overflow: auto to contain image and text iside element.
 
+if use float
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 horizontal navigation link = use inline-block
