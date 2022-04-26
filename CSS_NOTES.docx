@@ -42,3 +42,5 @@ if use float
 }
 
 horizontal navigation link = use inline-block
+
+padding can be used to center an element = padding: 70px 0;
