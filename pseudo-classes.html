@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pseudo-classes</title>
+        <style>
+            a.link:hover {
+                font-size: large;
+                font-weight: bold;
+                font-family: cursive;
+                color: green;
+            }
+            .div1 {
+                width: 500px;
+                height: 100px;
+                background-color: yellow;
+                margin: auto;
+                text-align: center;
+                display: flex;
+            }
+
+            .div1:hover {
+                color: white;
+                background-color: lightblue;
+                border: 1px solid green;
+                
+            }
+
+            h1 {
+                text-align: center;
+                margin: auto;
+            }
+
+            .showme {
+                display: none;
+                background-color: yellow;
+                padding: 20px;
+            }
+
+            .div2:hover p {
+                display: block;
+            }
+
+            p:first-child {
+                color: darkblue;
+                font-size: large;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Pseudo-classes and HTML classes</h2>
+        <div>
+            <p>Hover the link and it will change the font size and color</p>
+        <p><a class="link" href="css_syntax.asp">CSS Syntax</a></p>
+        <p><a href="default.asp">CSS Tutorila</a></p>
+        </div>
+        
+
+        <div class="div1">
+            <h1>Mouse Over Me</h1>
+        </div>
+        <div class="div2">Hover me to show p element
+            <p class="showme">Hello and Welcome</p>
+        </div>
+    </body>
+</html>
