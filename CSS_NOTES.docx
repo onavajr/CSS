@@ -42,5 +42,9 @@ if use float
 }
 
 horizontal navigation link = use inline-block
-
 padding can be used to center an element = padding: 70px 0;
+
+to add things in the first and last phrase of an element use content: url(image.png); with a selector of ".sample::before or after"
+.sample::before {
+	content: url(image.png);
+}

@@ -45,6 +45,26 @@
                 font-size: large;
                 font-weight: bold;
             }
+
+            .ptag::first-line {
+                color: #ff0000;
+                font-variant: small-caps;
+                font-size: xx-large;
+            }
+
+            .ptag::first-letter {
+                color: black;
+                font-family: cursive;
+            }
+
+            img {
+                opacity: .5;
+            }
+
+            img:hover {
+                opacity: 1;
+            }
+
         </style>
     </head>
     <body>
@@ -54,13 +74,15 @@
         <p><a class="link" href="css_syntax.asp">CSS Syntax</a></p>
         <p><a href="default.asp">CSS Tutorila</a></p>
         </div>
-        
-
         <div class="div1">
             <h1>Mouse Over Me</h1>
         </div>
         <div class="div2">Hover me to show p element
             <p class="showme">Hello and Welcome</p>
         </div>
+        <p class="ptag">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <img src="img_forest.jpg" alt="forest" width="220" height="150">
+        <img src="img_5terre.jpg" alt="5terre" width="220" height="150">
+        <img src="img_mountains.jpg" alt="mountain" width="220" height="150">
     </body>
 </html>
