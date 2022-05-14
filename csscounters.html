@@ -11,20 +11,50 @@
             margin: 0;
             box-sizing: border-box;
         }
+
         body {
-            counter-reset: chapter;
+            counter-reset: section;
+            margin: 10px;
+        }
+
+        h1 {
+            
+            counter-reset: subsection;
+        }
+
+        h1::before {
+            counter-increment: section;
+            content: "Section" counter(section) ". ";
         }
 
         h2::before {
-            counter-increment: chapter;
-            content: "Chapter " counter(chapter)": ";
+            counter-increment: subsection;
+            content: counter(section) " ." counter(subsection);
+        }
+
+        h2 {
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Using CSS Counters</h1>
-    <h2>HTML tutorials</h2>
-    <h2>CSS tutorials</h2>
-    <h2>JavaScript tutorial</h2>
+    <h1>HTML/CSS Tutorials</h1>
+    <div class="first">
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>Bootstrap</h2>
+        <h2>W3.CSS</h2>
+    </div>
+        
+
+    <h1>Scripting Tutorials</h1>
+        <h2>JavaScript</h2>
+        <h2>jQuery</h2>
+        <h2>React</h2>
+
+    <h1>Programming Tutorials</h1>
+        <h2>Python</h2>
+        <h2>Java</h2>
+        <h2>C++</h2>
 </body>
 </html>
