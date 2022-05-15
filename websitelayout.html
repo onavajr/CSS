@@ -35,6 +35,55 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px){
+            .column{
+                width: 100%;
+            }
+        }
+
+        .column2 {
+            float: left;
+            padding: 10px;
+        }
+
+        .column2.side2 {
+            width: 25%;
+        }
+
+        .column2.middle2 {
+            width: 50%;
+        }
+
+        .row2:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px){
+            .column2.side2, .column2.middle2{
+                width: 100%;
+            }
+        }
+
+        .footer {
+         background-color: #f1f1f1;
+         padding: 10px;
+        text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +93,44 @@
         <a href="#">Link</a>
         <a href="#">Link</a>
     </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
+
+    <div class="row2">
+        <div class="column2 side2">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+
+        <div class="column2 middle2">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+
+        <div class="column2 side2">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+    </div>
     
+    <div class="footer">
+        <p>Footer</p>
+    </div>
 </body>
 </html>
