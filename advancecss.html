@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #roundcorner {
+            background: url(attrimage/crumpled-old-paper-background-texture-crumpled-old-brown-paper-background-texture-155554006.jpg);
+            background-position: top left;
+            background-repeat: repeat;
+            border-radius: 10px;
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #borderimage {
+            border: 25px solid transparent;
+            border-image: url(attrimage/border-image-css-and-svg.png) 30 stretch;
+            padding: 20px;
+            width: 500px;
+            height: 300px;
+            text-align: center;
+        }
+
+        .borderimage {
+            margin-top: 25%;
+        }
+    </style>
+</head>
+<body>
+    <p>Round Corners with background image</p>
+    <div id="roundcorner">
+        <p>Round corners</p>
+    </div>
+    <div id="borderimage">
+        <p class="borderimage">Border Image</p>
+    </div>
+</body>
+</html>
