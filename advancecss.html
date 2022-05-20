@@ -22,18 +22,25 @@
             margin: 10px;
         }
 
-        #borderimage {
+        .borderimage {
             border: 25px solid transparent;
             border-image: url(attrimage/border-image-css-and-svg.png) 30 stretch;
             padding: 20px;
             width: 500px;
             height: 300px;
             text-align: center;
+            background-color: rgba(255,0,0,0.5);
         }
 
-        .borderimage {
-            margin-top: 25%;
-        }
+        .gradiant {
+            box-sizing: content-box;
+            border: 25px solid transparent;
+            height: 200px;
+            width: 400px;
+            background-image: linear-gradient(to bottom right, red, yellow, blue);
+            border-image: url(attrimage/border-image-css-and-svg.png) 30 stretch;
+        } 
+       
     </style>
 </head>
 <body>
@@ -41,8 +48,12 @@
     <div id="roundcorner">
         <p>Round corners</p>
     </div>
-    <div id="borderimage">
-        <p class="borderimage">Border Image</p>
+    <div class="borderimage">
+        <p">Border Image</p>
+    </div>
+
+    <div class="gradiant">
+        <p">Border Image</p>
     </div>
 </body>
 </html>
