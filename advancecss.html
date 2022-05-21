@@ -54,6 +54,38 @@
             margin-top: 20px;
             text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
         }
+
+        p.test1 {
+            width: 200px;
+            border: 1px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        p.test2 {
+            width: 200px;
+            border: 1px solid black;
+            white-space: nowrap;
+            text-overflow: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .test1:hover {
+            overflow: visible;
+            width: 100px;
+            white-space: wrap;
+            border: none;
+            word-wrap: break-word;
+        }
+
+        .test2:hover {
+            overflow: visible;
+            width: 400px;
+            white-space: wrap;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -68,5 +100,12 @@
     <div class="gradiant">
         <p>Border Image</p>
     </div>
+
+    <h1>Text-overflow property</h1>
+    <p>Text-overflow:clip;</p>
+    <p class="test1">This is some long text that will not fit in the box</p>
+
+    <p>Text-overflow:ellipsis;</p>
+    <p class="test2">This is some long text that will not fit in the box</p>
 </body>
 </html>
