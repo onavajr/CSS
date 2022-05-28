@@ -12,7 +12,7 @@
             border-bottom: 1px dotted black;
         }
 
-        .tooltip .tooltiptext {
+        .tooltiptext {
             visibility: hidden;
             width: 120px;
             background-color: black;
@@ -28,6 +28,11 @@
         .tooltip:hover .tooltiptext {
             visibility: visible;
         }
+
+        img {
+    
+            box-shadow: 8px 0px 5px 8px;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +40,13 @@
     <p>Move the mouse over the text below:</p>
     <div class="tooltip">Hover over me
         <span class="tooltiptext">Tooltip text</span>
+    </div>
+
+    <div>
+        <a target="_blank" href="attrimage/img_tree.gif">
+            <img src="attrimage/img_tree.gif" alt="tree" style="width: 150px;">
+        </a>
+        
     </div>
 </body>
 </html>
