@@ -12,18 +12,71 @@
     .wide {
       max-width: 100%;
       height: auto;
+      opacity: 0.5;
     }
 
-    img {
+    img.flower {
       display: block;
       margin-left:auto;
       margin-right: auto;
+      filter: blur(4px);
     }
+
+    img.hover {
+      transition: .5s ease;
+      background-color: #008cba;
+    }
+
+    img.hover:hover .overlay {
+      opacity: 1;
+    }
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .image {
+      display: block;
+      width: 20%;
+      height: auto;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: blue;
+    }
+
+    .container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
   </style>
 </head>
 <body>
   <h2>Responsive Image</h2>
   <img class="wide"src="image_gallery/img_5terre_wide.jpg" width="5000" height="auto">
-  <img src="attrimage/img_flwr.gif" alt="flower">
+  <img class="flower" src="attrimage/img_flwr.gif" alt="flower">
+  <div class="container">
+    <img class="image" src="attrimage/img_tree.gif" alt="tree">
+    <div class="overlay">
+      <div class="text">Hello World</div>
+    </div>
+  </div>
 </body>
 </html>
