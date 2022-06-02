@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         * {
-            outline: 1px solid red;
+           
         }
         .button {
             background-color: #4caf50;
@@ -27,6 +27,28 @@
         .button3 {background-color: #f44336;}
         .button4 {background-color: #e7e7e7; color:black;}
         .button5 {background-color: #555555;}
+
+
+        .pagination {
+            display: inline-block;
+        }
+        .pagination a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination a.active {
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +63,17 @@
     <button class="button button3">Red</button>
     <button class="button button4">Gray</button>
     <button class="button button5">Black</button>
+    <h2>Simple Pagination</h2>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
 
 </body>
 </html>
