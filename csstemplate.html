@@ -1,62 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            background-color: #746060;
-            color: gray;
-            outline: 1px solid red;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .header {
-            background-color: #f1f1f1;
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-        }
-
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 10px;
-            height: 250px;
-        }
-
-        .container:after {
-            content: "";
-            display: table;
-            clear:both;
-        }
-
-        .footer {
-            background-color: #f1f1f1;
-            padding: 10px;
-            text-align: center;
-        }
-
-        @media screen and (max-width:600px){
-            .column {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
+<html>
 <body>
-    <h1 class="header">Header</h1>
-    <div class="container">
-        <div class="column">Column</div>
-        <div class="column">Column</div>
-        <div class="column">Column</div>
-    </div>
-    <footer class="footer">Footer</footer>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button>
+<button onclick="stopWorker()">Stop Worker</button>
+
+<script>
+var w;
+
+function startWorker() {
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
+
 </body>
 </html>
